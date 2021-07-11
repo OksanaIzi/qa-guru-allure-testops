@@ -1,9 +1,6 @@
 package tests.UI.tests;
 
-import annotations.AutoMember;
-import annotations.Component;
-import annotations.JiraIssue;
-import annotations.ManualMember;
+import annotations.*;
 import io.qameta.allure.AllureId;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
@@ -13,6 +10,7 @@ import org.junit.jupiter.api.Test;
 import tests.TestBase;
 import tests.UI.steps.MainPageSteps;
 
+@Layer("web")
 public class MainPageTests extends TestBase {
 
     public final static String BASE_URL = "https://m2.ru";
